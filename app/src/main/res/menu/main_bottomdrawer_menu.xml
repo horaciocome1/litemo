@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottomdrawer_menu_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home_black_24dp"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/bottomdrawer_menu_writers"
+        android:title="Writers"
+        android:icon="@drawable/ic_people_black_24dp"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/bottomdrawer_menu_profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/bottomdrawer_menu_settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_settings_black_24dp"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/bottomdrawer_menu_about"
+        android:title="About"
+        android:icon="@drawable/ic_short_text_black_24dp"
+        app:showAsAction="always" />
+
+</menu>

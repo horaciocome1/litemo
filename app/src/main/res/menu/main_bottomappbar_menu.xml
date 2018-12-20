@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/main_bottomappbar_menu_write"
+        android:title="Write"
+        android:icon="@drawable/ic_add_white_24dp"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/main_bottomappbar_menu_search"
+        android:title="Search"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:showAsAction="always" />
+
+</menu>

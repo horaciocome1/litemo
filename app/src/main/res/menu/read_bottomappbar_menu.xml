@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/read_bottomappbar_menu_upvote"
+        android:title="Upvote"
+        android:icon="@drawable/ic_arrow_drop_up_black_24dp"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/read_bottomappbar_menu_description"
+        android:title="Description"
+        android:icon="@drawable/ic_description_black_24dp"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/read_bottomappbar_menu_background"
+        android:title="Background"
+        android:icon="@drawable/ic_photo_size_select_actual_black_24dp"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/read_bottomappbar_menu_share"
+        android:title="Share"
+        android:icon="@drawable/ic_share_black_24dp"
+        app:showAsAction="always" />
+
+</menu>

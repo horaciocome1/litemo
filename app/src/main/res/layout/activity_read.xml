@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReadActivity"
+    android:background="#99000000">
+
+
+    <ImageView
+        android:id="@+id/activity_read_backround_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:tint="#99000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/writer1"
+        android:layout_gravity="fill"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/activity_read_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        app:navigationIcon="@drawable/ic_chevron_left_black_24dp"
+        android:background="@android:color/transparent"
+        android:layout_gravity="top"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/background"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="1dp"
+        app:civ_border_overlay="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/activity_read_message_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="32dp"
+                android:text="Não acredite em algo simplesmente porque ouviu. Não acredite em algo simplesmente porque todos falam a respeito. Não acredite em algo simplesmente porque está escrito em seus livros religiosos. Não acredite em algo só porque seus professores e mestres dizem que é verdade. Não acredite em tradições só porque foram passadas de geração em geração. Mas depois de muita análise e observação, se você vê que algo concorda com a razão, e que conduz ao bem e beneficio de todos, aceite-o e viva-o."
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:lineSpacingExtra="16dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/activity_read_title_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Não Acredite Em,"
+                android:textColor="#99ffffff"
+                android:textSize="24sp"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/activity_read_message_textview"/>
+
+            <TextView
+                android:id="@+id/activity_read_category_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="Mensagens de Reflexão"
+                android:layout_centerHorizontal="true"
+                android:textSize="16sp"
+                android:textColor="#85ffffff"
+                android:layout_below="@id/activity_read_title_textview"/>
+
+            <TextView
+                android:id="@+id/activity_read_percent_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="95%"
+                android:textAlignment="center"
+                android:textColor="#80ffffff"
+                android:textSize="14sp"
+                android:layout_margin="32dp"
+                android:layout_below="@id/activity_read_category_textview"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/activity_read_bottomappbar"
+        style="@style/Widget.MaterialComponents.BottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:theme="@style/AppTheme.BottomAppBarMenu"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabAlignmentMode="end"
+        app:fabCradleMargin="0dp"
+        app:fabCradleRoundedCornerRadius="8dp"
+        app:hideOnScroll="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/activity_read_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        app:layout_anchor="@id/activity_read_bottomappbar"
+        app:srcCompat="@drawable/ic_reply_black_24dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

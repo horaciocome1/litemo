@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:layout_marginBottom="?attr/actionBarSize">
+
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                       android:layout_height="wrap_content">
+
+        <ImageView
+                android:scaleType="centerCrop"
+                android:layout_width="0dp"
+                android:layout_height="434dp"
+                app:srcCompat="@drawable/writer1"
+                android:id="@+id/fragment_profile_backgroung_imageview"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:tint="#75000000"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/fragment_profile_profile_pic_imageview"
+                android:scaleType="centerCrop"
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                app:srcCompat="@drawable/background"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_profile_backgroung_imageview"
+                app:layout_constraintBottom_toBottomOf="@+id/fragment_profile_backgroung_imageview"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintHorizontal_bias="0.084"
+                app:layout_constraintVertical_bias="0.525"/>
+        <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:srcCompat="@drawable/ic_email_black_24dp"
+                android:id="@+id/fragment_profile_message_button"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                app:layout_constraintStart_toEndOf="@+id/fragment_profile_followw_button"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_profile_backgroung_imageview"/>
+
+        <TextView
+                android:text="17 year old student passionate for cars and urban culture. Thats what i write about.\nHope you like it.\n\nhugs!"
+                android:layout_width="176dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="@color/text_on_primary"
+                android:maxLines="10"
+                android:id="@+id/fragment_profile_description_textview"
+                app:layout_constraintTop_toTopOf="@+id/fragment_profile_backgroung_imageview"
+                app:layout_constraintBottom_toBottomOf="@+id/fragment_profile_backgroung_imageview"
+                android:layout_marginEnd="32dp"
+                app:layout_constraintEnd_toEndOf="@+id/fragment_profile_backgroung_imageview"
+                android:layout_marginRight="32dp"
+                android:layout_marginStart="32dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"/>
+
+        <TextView
+                android:text="1.5b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fragment_profile_followers_textview"
+                android:textColor="@color/text_on_primary"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/fragment_profile_followers_subtitle_textview"
+                app:layout_constraintStart_toStartOf="@+id/fragment_profile_followers_subtitle_textview"
+                app:layout_constraintEnd_toEndOf="@+id/fragment_profile_followers_subtitle_textview"/>
+
+        <TextView
+                android:text="Followers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fragment_profile_followers_subtitle_textview"
+                android:textColor="@color/text_on_primary"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                app:layout_constraintStart_toEndOf="@+id/fragment_profile_profile_pic_imageview"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/fragment_profile_backgroung_imageview"/>
+
+        <Button
+                android:text="Follow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fragment_profile_followw_button"
+                android:textAllCaps="false"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_profile_backgroung_imageview"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:layout_constraintStart_toStartOf="@+id/fragment_profile_followers_subtitle_textview"
+        />
+        <TextView
+                android:text="Posts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_on_primary"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:id="@+id/fragment_profile_posts_subtitle_textview"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                app:layout_constraintStart_toEndOf="@+id/fragment_profile_followers_subtitle_textview"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/fragment_profile_backgroung_imageview"
+                app:layout_constraintHorizontal_bias="0.0"/>
+
+        <TextView
+                android:text="7.0k"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_on_primary"
+                android:textSize="14sp"
+                android:id="@+id/fragment_profile_posts_textview"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/fragment_profile_posts_subtitle_textview"
+                app:layout_constraintEnd_toEndOf="@+id/fragment_profile_posts_subtitle_textview"
+                app:layout_constraintStart_toStartOf="@+id/fragment_profile_posts_subtitle_textview"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_location_on_black_24dp"
+                android:id="@+id/imageView2"
+                app:layout_constraintEnd_toStartOf="@+id/fragment_profile_town_textview"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintTop_toTopOf="@+id/fragment_profile_town_textview"
+                app:layout_constraintBottom_toBottomOf="@+id/fragment_profile_town_textview"/>
+
+        <TextView
+                android:text="Maputo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fragment_profile_town_textview"
+                android:textColor="@color/secondary_text"
+                android:layout_marginTop="32dp"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_profile_profile_pic_imageview"
+                android:layout_marginEnd="32dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="32dp" android:layout_marginStart="64dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="64dp"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_history_black_24dp"
+                android:id="@+id/imageView3"
+                app:layout_constraintEnd_toStartOf="@+id/fragment_profile_since_textview"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintTop_toTopOf="@+id/fragment_profile_since_textview"
+                app:layout_constraintBottom_toBottomOf="@+id/fragment_profile_since_textview"/>
+
+        <TextView
+                android:text="Abril 2018"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fragment_profile_since_textview"
+                android:textColor="@color/secondary_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="64dp" android:layout_marginStart="64dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_profile_town_textview"/>
+
+        <TextView
+                android:text="Não acredite em algo simplesmente porque ouviu. Não acredite em algo simplesmente porque todos falam a respeito. Não acredite em algo simplesmente porque está escrito em seus livros religiosos. Não acredite em algo só porque seus professores e mestres dizem que é verdade. Não acredite em tradições só porque foram passadas de geração em geração. Mas depois de muita análise e observação, se você vê que algo concorda com a razão, e que conduz ao bem e beneficio de todos, aceite-o e viva-o."
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="32dp"
+                android:textAlignment="center"
+                android:lineSpacingExtra="16sp"
+                android:textSize="16sp"
+                android:textColor="@color/primary_text"
+                android:id="@+id/fragment_profile_latest_textview"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_profile_since_textview"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"/>
+
+        <Button
+                android:text="More"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:id="@+id/fragment_profile_more_button"
+                android:lineSpacingExtra="16dp"
+                android:textSize="16sp"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                app:icon="@drawable/ic_add_black_24dp"
+                android:layout_marginBottom="96dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="32dp"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_profile_latest_textview"
+                android:layout_marginStart="32dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="32dp"
+                android:layout_marginEnd="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="32dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
